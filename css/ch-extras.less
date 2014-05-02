@@ -1,4 +1,121 @@
 /* LESS Document */
 
-/* CSS */
+@red : #c41230;
+@grey : #AFA5A6;
+@darkgrey : #655F61;
+	
 
+@import url("../less/font-awesome.less");
+.fap() {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table.how-were-different {
+	@size: 10%;
+	font-size:1.2em;
+	width:100%;
+	position:relative;
+	tr {
+		position:relative;
+		td:first-child 
+		{
+			width: @size * 2;
+			text-align: center;
+			
+		}
+		td {
+			border:1px solid @grey;
+			padding:1% 2%;
+			font-family: 'avenir', Arial, Helvetica, sans-serif;
+			vertical-align:middle;
+			width:100%;
+			a {
+				color:@darkgrey;
+				font-weight:normal;
+				position:relative;
+				display:block;
+				width:100%;
+
+				&:after {
+					position:absolute;
+					right:0;
+					.fap();
+					content: "\f144";
+					font-size:larger;
+				}
+				
+				&:hover {
+					color:@red;
+				}
+					
+				
+			}
+			
+			
+			
+	
+
+			
+		}
+		
+		@media screen and (max-width: 480px) {
+				display:block;
+				width:100%;
+				td:nth-child(odd) {
+					
+					position:absolute;
+					top:10px;
+					border:none;
+					width:100%;
+					
+				}
+				
+				td:nth-child(even) {
+					width:100%;
+					display:block;
+					border-bottom:none;
+					text-align:center;
+					position:relative;
+					padding:60px 2% 2% 2%;
+					a {
+						&:after {
+							display:none;
+							
+						}
+					}
+					
+				}
+				
+				&:nth-last-child(1) {
+					border-bottom: 1px solid @grey;
+				}
+		}
+		
+				
+	}
+		
+}
+
+
+.ch-icon {
+	@size: 35px;
+	display:inline-block;
+	width:@size;
+	height:@size;
+	background-size:100% auto;
+	background-position:center center;
+	background-repeat:no-repeat;	
+}
+
+.ch-icon-cake { background-image: url(../img/cake.png); }
+.ch-icon-chefhat { background-image: url(../img/chefhat.png); }
+.ch-icon-heart { background-image: url(../img/heart.png); }
+.ch-icon-iip { background-image: url(../img/iip.png); }
+.ch-icon-startick { background-image: url(../img/startick.png); }
+.ch-icon-trolley { background-image: url(../img/trolley.png); }

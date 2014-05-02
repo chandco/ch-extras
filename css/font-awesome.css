@@ -1,4 +1,3 @@
-/* LESS Document */
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7,8 +6,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -190,9 +189,6 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-fa-glass {
-  display: block;
-}
 .fa-glass:before {
   content: "\f000";
 }
@@ -1339,98 +1335,4 @@ fa-glass {
 }
 .fa-plus-square-o:before {
   content: "\f196";
-}
-table.how-were-different {
-  font-size: 1.2em;
-  width: 100%;
-  position: relative;
-}
-table.how-were-different tr {
-  position: relative;
-}
-table.how-were-different tr td:first-child {
-  width: 20%;
-  text-align: center;
-}
-table.how-were-different tr td {
-  border: 1px solid #afa5a6;
-  padding: 1% 2%;
-  font-family: 'avenir', Arial, Helvetica, sans-serif;
-  vertical-align: middle;
-  width: 100%;
-}
-table.how-were-different tr td a {
-  color: #655f61;
-  font-weight: normal;
-  position: relative;
-  display: block;
-  width: 100%;
-}
-table.how-were-different tr td a:after {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f144";
-  font-size: larger;
-}
-table.how-were-different tr td a:hover {
-  color: #c41230;
-}
-@media screen and (max-width: 480px) {
-  table.how-were-different tr {
-    display: block;
-    width: 100%;
-  }
-  table.how-were-different tr td:nth-child(odd) {
-    position: absolute;
-    top: 10px;
-    border: none;
-    width: 100%;
-  }
-  table.how-were-different tr td:nth-child(even) {
-    width: 100%;
-    display: block;
-    border-bottom: none;
-    text-align: center;
-    position: relative;
-    padding: 60px 2% 2% 2%;
-  }
-  table.how-were-different tr td:nth-child(even) a:after {
-    display: none;
-  }
-  table.how-were-different tr:nth-last-child(1) {
-    border-bottom: 1px solid #afa5a6;
-  }
-}
-.ch-icon {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-size: 100% auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.ch-icon-cake {
-  background-image: url(../img/cake.png);
-}
-.ch-icon-chefhat {
-  background-image: url(../img/chefhat.png);
-}
-.ch-icon-heart {
-  background-image: url(../img/heart.png);
-}
-.ch-icon-iip {
-  background-image: url(../img/iip.png);
-}
-.ch-icon-startick {
-  background-image: url(../img/startick.png);
-}
-.ch-icon-trolley {
-  background-image: url(../img/trolley.png);
 }
