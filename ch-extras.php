@@ -17,11 +17,11 @@
 /**
  * Register style sheet.
  */
-function load_gazscript() {
+function chload_gazscript() {
 	die();
 	wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 }
-add_action( 'wp_enqueue_scripts', 'load_gazscript' );
+add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
 
 wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 ?>
