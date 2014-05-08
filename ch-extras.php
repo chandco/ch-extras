@@ -12,15 +12,16 @@
  
 
 // Register style sheet.
-add_action( 'wp_enqueue_scripts', 'chextras_assets' );
+
 
 /**
  * Register style sheet.
  */
-function chextras_assets() {
+function load_gazscript() {
 	die();
-	wp_register_style( 'ch-extra-css', plugins_url('/ch-extras/css/ch-extras.css') );
-	wp_enqueue_style( 'ch-extra-css' );
+	wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 }
+add_action( 'wp_enqueue_scripts', 'load_gazscript' );
 
+wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 ?>
