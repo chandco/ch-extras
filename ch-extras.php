@@ -18,6 +18,7 @@ add_action( 'wp_enqueue_scripts', 'chextras_assets' );
  * Register style sheet.
  */
 function chextras_assets() {
+	echo "Enqueue ScriptS!";
 	wp_register_style( 'ch-extra-css', plugins_url('/ch-extras/css/ch-extras.css') );
 	wp_enqueue_style( 'ch-extra-css' );
 }
