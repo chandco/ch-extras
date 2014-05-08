@@ -10,13 +10,16 @@
  * License: GPL2
  */
  
-function chextras_assets()
 
-{
-		//wp_enqueue_script('ch_extras_css', plugins_url('gazscript.js',__FILE__), 'jquery', "0.1", true );
-		wp_enqueue_style( 'ch_extras_css', plugins_url('css/ch-extras.css',__FILE__) );
-		//wp_enqueue_script('vfe_the_js', 'javascript.js' );
-}
+// Register style sheet.
 add_action( 'wp_enqueue_scripts', 'chextras_assets' );
+
+/**
+ * Register style sheet.
+ */
+function chextras_assets() {
+	wp_register_style( 'ch-extra-css', plugins_url('/ch-extras/css/ch-extras.css') );
+	wp_enqueue_style( 'ch-extra-css' );
+}
 
 ?>
