@@ -18,7 +18,6 @@
  * Register style sheet.
  */
 function chload_gazscript() {
-	die();
 	wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 }
 add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
@@ -27,11 +26,11 @@ wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 
 add_filter( 'set_content_ids', 'plugin_override_content_ids' );
 function plugin_override_content_ids($ids) {
-	echo "I just happened";
-return array(
+
+	return array(
                         'cat_fresh_ideas' => 3,
                         'cat_news' => 1,
                         'cat_csr' => 7,
                         'page_about_us' => 12);
-}
+	}
 ?>
