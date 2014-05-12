@@ -25,7 +25,9 @@ add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
 wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
 
 add_filter( 'set_content_ids', 'plugin_override_content_ids' );
-function plugin_override_content_ids($ids) {
+global $content_ids;
+
+function plugin_override_content_ids($content_ids) {
 
 	return array(
                         'cat_fresh_ideas' => 3,
