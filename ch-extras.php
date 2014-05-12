@@ -33,6 +33,6 @@ function plugin_override_content_ids($content_ids) {
                         'cat_fresh_ideas' => 3,
                         'cat_news' => 1,
                         'cat_csr' => 7,
-                        'page_about_us' => 12);
+                        'page_about_us' => 2);
 	}
 ?>
