@@ -18,11 +18,11 @@
  * Register style sheet.
  */
 function chload_gazscript() {
-	wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
+	wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css', __FILE__) );
 }
 add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
 //comment
-wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
+
 
 add_filter( 'set_content_ids', 'plugin_override_content_ids' );
 global $content_ids;
