@@ -24,4 +24,13 @@ function chload_gazscript() {
 add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
 //comment
 wp_enqueue_style( 'gz_gaz_style', plugins_url('css/ch-extras.css') );
+
+add_filter( 'set_content_ids', 'override_content_ids' );
+function override_content_ids($ids) {
+return array(
+                        'cat_fresh_ideas' => 3,
+                        'cat_news' => 1,
+                        'cat_csr' => 7,
+                        'page_about_us' => 12);
+}
 ?>
