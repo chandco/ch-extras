@@ -25,7 +25,6 @@ add_action( 'wp_enqueue_scripts', 'chload_gazscript' );
 
 
 add_filter( 'set_content_ids', 'plugin_override_content_ids' );
-global $content_ids;
 
 function plugin_override_content_ids($content_ids) {
 
@@ -33,6 +32,6 @@ function plugin_override_content_ids($content_ids) {
                         'cat_fresh_ideas' => 3,
                         'cat_news' => 1,
                         'cat_csr' => 7,
-                        'page_about_us' => 2);
+                        'page_about_us' => 12);
 	}
 ?>
