@@ -94,7 +94,7 @@ table.how-were-different tr td a:hover {
   background-image: url(../img/trolley.png);
 }
 body.archive.author div.slider {
-  background: #afa5a6;
+  background: #eeeeee;
 }
 body.archive.author div.slider li {
   background-size: auto 100%;
