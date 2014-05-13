@@ -118,6 +118,10 @@ body.archive.author div.slider li {
   background-position: center center;
   background-repeat: no-repeat;
 }
+article.entry h3 {
+  color: #c41230;
+  font-size: 22px;
+}
 article.entry blockquote {
   border-top: 2px solid #e2e0d1;
   border-bottom: 2px solid #e2e0d1;
