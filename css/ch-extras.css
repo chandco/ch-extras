@@ -99,3 +99,15 @@ body.archive.author div.slider {
 body.archive.author div.slider li {
   background-size: auto 100%;
 }
+.slider .slides-content h2 {
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: normal;
+  font-family: 'avenir-black', Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  margin: 90px auto 32px auto;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
