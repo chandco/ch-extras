@@ -3,7 +3,17 @@
 @red : #c41230;
 @grey : #AFA5A6;
 @darkgrey : #655F61;
-	
+@lightgrey : #e2e0d1;
+
+
+.avenir() {
+	font-family:'avenir-roman', Arial, Helvetica, sans-serif;;
+}
+
+.avenir-black() {
+  font-weight: normal !important;
+  font-family: 'avenir-black', Arial, Helvetica, sans-serif;
+}
 
 .fap() {
   display: inline-block;
@@ -131,8 +141,7 @@ body.archive.author {
 .slider .slides-content h2 {
 	font-size: 44px;
   line-height: 48px;
-  font-weight: normal;
-  font-family: 'avenir-black', Arial, Helvetica, sans-serif;
+	.avenir-black();
   color: #ffffff;
   display: block;
   margin: 0 auto;
@@ -140,3 +149,34 @@ body.archive.author {
   margin: 90px auto 32px auto;
   text-shadow: 0 0 25px RGBA(0,0,0,0.5);
 }
+
+.fullscreenslider .flex-direction-nav a {
+	width: 70px;
+	height: 90px;
+	background-size: auto 80%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+article.entry {
+	blockquote {
+		border-top: 2px solid @lightgrey;
+		border-bottom: 2px solid @lightgrey;
+		padding:20px;
+		figure.wp-caption {
+			float:left;
+			width:200px;
+			
+			img {
+				max-width:100%;
+				height:auto;
+				
+			}
+		figcaption {
+			font-size:12px;
+			.avenir();
+			}
+		}
+	}
+}
+			
