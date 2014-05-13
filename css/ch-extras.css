@@ -121,11 +121,13 @@ body.archive.author div.slider li {
 article.entry blockquote {
   border-top: 2px solid #e2e0d1;
   border-bottom: 2px solid #e2e0d1;
-  padding: 20px;
+  padding: 10px 0 20px 0;
+  margin: 20px 0;
 }
 article.entry blockquote figure.wp-caption {
   float: left;
-  width: 200px;
+  max-width: 30%;
+  margin: 0 20px 20px 0;
 }
 article.entry blockquote figure.wp-caption img {
   max-width: 100%;
